@@ -18,13 +18,11 @@
   .grid-1 div {
     color: white;
     font-size: 20px;
-    padding: 20px;
     }
   
   /* specific item styles */
   
   .item-1 {
-    background: #b03532;
     grid-area: header;
   }
   .item-2 {
@@ -55,3 +53,16 @@
     grid-area: article;
   }
   
+
+  .wrapper {
+    padding: 0 20px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .p_hacker{
+    color: #c5564a;
+    font-size: 10px;
+  }
