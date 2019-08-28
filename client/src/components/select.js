@@ -9,7 +9,7 @@ const Select = ({handleChange, options, value}) => (
 				<option key={value} value={value}>{label}</option>
 			)}
 		</select>
-		<span className="selectText">Noticias por página</span>
+		<span className="selectText"> <i class="far fa-newspaper"></i>Noticias por página</span>
 	</div>
 );
 

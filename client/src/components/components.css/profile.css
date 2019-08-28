@@ -40,6 +40,7 @@
   }
   .item-2 {
     background: #f3f3f3;
+    border-top: 5px solid rgb(243, 255, 81);
     grid-area: main;
     
     display: grid;

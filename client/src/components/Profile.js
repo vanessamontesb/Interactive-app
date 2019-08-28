@@ -151,7 +151,7 @@ class Profile extends Component {
             <ReactYouTubeExample/>
           </div>
           <div class="item-5">
-		  <h3> <i class="fab fa-twitter-square"></i>Twitts</h3>
+		  <h3> <i class="fab fa-twitter-square"></i>Tweets</h3>
             <Twitter/>
           </div>
         </div>
