@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { register } from './UserFunctions'
 import { Link } from 'react-router-dom'
+import login_photo from './login_photo.png'
 
 class Register extends Component {
   constructor() {
@@ -9,6 +10,8 @@ class Register extends Component {
       first_name: '',
       last_name: '',
       email: '',
+      celular:'',
+      user_name:'',
       password: '',
       errors: {}
     }
@@ -27,6 +30,8 @@ class Register extends Component {
       first_name: this.state.first_name,
       last_name: this.state.last_name,
       email: this.state.email,
+      celular:this.state.celular,
+      user_name:this.state.user_name,
       password: this.state.password
     }
 
@@ -37,64 +42,91 @@ class Register extends Component {
 
   render() {
     return (
+  
       <div className="container">
         <div className="row">
-          <div className="col-md-6 mt-5 mx-auto">
-            <form noValidate onSubmit={this.onSubmit}>
-              <h1 className="h3 mb-3 font-weight-normal">Register</h1>
-              <div className="form-group">
-                <label htmlFor="name">First name</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  name="first_name"
-                  placeholder="Enter your first name"
-                  value={this.state.first_name}
-                  onChange={this.onChange}
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="name">Last name</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  name="last_name"
-                  placeholder="Enter your lastname name"
-                  value={this.state.last_name}
-                  onChange={this.onChange}
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email">Email address</label>
-                <input
-                  type="email"
-                  className="form-control"
-                  name="email"
-                  placeholder="Enter email"
-                  value={this.state.email}
-                  onChange={this.onChange}
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="password">Password</label>
-                <input
-                  type="password"
-                  className="form-control"
-                  name="password"
-                  placeholder="Password"
-                  value={this.state.password}
-                  onChange={this.onChange}
-                />
-              </div>
-              <button
-                type="submit"
-                className="btn btn-lg btn-primary btn-block"
-              >
-                Register!
-              </button>
-            </form>
+           <div className = " col-md-3 mt-2 imgContainer"><img src={login_photo} class="img" alt="Responsive image"></img></div>
+             <div className="col-md-3 mt-2 mx-auto">
+               <form noValidate onSubmit={this.onSubmit}>
+                  <div className="form-group">
+                    <label htmlFor="name">  Nombre</label>
+                    <input
+                    type="text"
+                    className="form-control"
+                    name="first_name"
+                    placeholder="Ingresa tu nombre"
+                    value={this.state.first_name}
+                    onChange={this.onChange}
+                    />
+                    </div>
+                    <div className="form-group">
+                    <label htmlFor="name">Apellido</label>
+                    <input
+                    type="text"
+                    className="form-control"
+                    name="last_name"
+                    placeholder="Ingresa tu apellido"
+                    value={this.state.last_name}
+                    onChange={this.onChange}
+                  />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="celular">Celular</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="celular"
+                    placeholder="Ingresa tu celular"
+                    value={this.state.celular}
+                    onChange={this.onChange}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="user_name">Nombre de usuario</label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        name="user_name"
+                        placeholder="Ingresa tu nombre de usuario"
+                        value={this.state.user_name}
+                        onChange={this.onChange}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="email">Correo electrónico</label>
+                      <input
+                        type="email"
+                        className="form-control"
+                        name="email"
+                        placeholder="Ingresa tu correo electrónico"
+                        value={this.state.email}
+                        onChange={this.onChange}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="password">Contraseña</label>
+                      <input
+                        type="password"
+                        className="form-control"
+                        name="password"
+                        placeholder="Contraseña"
+                        value={this.state.password}
+                        onChange={this.onChange}
+                      />
+                    </div>
+                    <label>Acepto las condiciones del servicio</label>
+                    <input
+                      type="checkbox"
+                    />
+                    <button
+                      type="submit"
+                      className="btn btn-lg btn-primary btn-block"
+                    >
+                      Registrate gratis
+                    </button>
+                  </form>
             <Link to="/login" className="nav-link">
-            Login
+            ¿Ya tienes cuenta?-Iniciar sesion 
           </Link>
           </div>
         </div>
