@@ -11,10 +11,10 @@
 	font-weight: 900;
 	background-color: transparent;
 	padding: 12px 15px;
-	border: 1px solid rgb(97, 96, 96);
+	border: 1px solid rgb(158, 154, 154);;
 	cursor: pointer;
 	outline: none;
-	color: rgb(97, 96, 96);
+	 color: rgb(158, 154, 154);
 }
 
 .paginationWrapper button.active {

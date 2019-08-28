@@ -14,7 +14,18 @@
                          "main     main     sidebar"
                          
   }
-  
+  @media (max-width: 1000px) { 
+    .grid-1 {
+      background: #f3f3f3;
+      display: flex;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      flex-direction: column;
+    
+    }
+
+  }
   /* items */
   
   .grid-1 div {
