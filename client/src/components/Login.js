@@ -70,7 +70,7 @@ class Login extends Component {
                 type="submit"
                 className="btn btn-lg btn-primary btn-block"
               >
-                Sign in
+                INICIAR SESIÓN 
               </button>
             </form>
             <p> ¿Has olvidado tu contraseña?</p>
