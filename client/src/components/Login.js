@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { login } from './UserFunctions'
 import { Link } from 'react-router-dom'
+import login_photo from './login_photo.png'
 
 class Login extends Component {
   constructor() {
@@ -35,33 +36,36 @@ class Login extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container login">
         <div className="row">
-          <div className="col-md-6 mt-5 mx-auto">
+        <div className = " col-md-3 mt-2 imgContainer"><img src={login_photo} class="imgLogin" alt="Responsive image"></img></div>
+          <div className="col-md-3 mt-2 mx-auto">
+          <div className="center"></div>
             <form noValidate onSubmit={this.onSubmit}>
-              <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
               <div className="form-group">
-                <label htmlFor="email">Email address</label>
+                <label htmlFor="email">Email</label>
                 <input
                   type="email"
                   className="form-control"
                   name="email"
-                  placeholder="Enter email"
+                  placeholder="Ingresa tu correo electrónico"
                   value={this.state.email}
                   onChange={this.onChange}
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="password">Password</label>
+                <label htmlFor="password">Contraseña</label>
                 <input
                   type="password"
                   className="form-control"
                   name="password"
-                  placeholder="Password"
+                  placeholder="Ingresa tu contraseña"
                   value={this.state.password}
                   onChange={this.onChange}
                 />
               </div>
+              <input type="checkbox"/>
+              <label>Recordar cuenta</label>
               <button
                 type="submit"
                 className="btn btn-lg btn-primary btn-block"
@@ -69,11 +73,12 @@ class Login extends Component {
                 Sign in
               </button>
             </form>
-            <li className="nav-item">
+            <p> ¿Has olvidado tu contraseña?</p>
+           
           <Link to="/register" className="nav-link">
-            Register
+            Registrate ahora GRATIS
           </Link>
-        </li>
+        
           </div>
         </div>
       </div>

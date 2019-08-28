@@ -122,7 +122,7 @@ class Register extends Component {
                       type="submit"
                       className="btn btn-lg btn-primary btn-block"
                     >
-                      Registrate gratis
+                      REGISTRATE GRATIS
                     </button>
                   </form>
             <Link to="/login" className="nav-link">
