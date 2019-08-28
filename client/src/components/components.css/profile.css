@@ -28,7 +28,7 @@
     grid-area: header;
   }
   .item-2 {
-    background: #33a8a5;
+    background: #f3f3f3;
     grid-area: main;
     
     display: grid;

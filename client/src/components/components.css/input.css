@@ -57,7 +57,7 @@
 	z-index: 10;
 	width: 100%;
 	background: transparent;
-	color: black;
+	color: rgb(53, 52, 52);
 	opacity: 0;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;

@@ -2,19 +2,19 @@
 	margin-bottom: 20px;
 	display: inline-block;
 	padding: 20px 40px;
-	background-color: black;
+	background-color: #f3f3f3;
 	font-weight: 900;
-	color: white;
+	color: rgb(97, 96, 96);
 }
 
 .paginationWrapper button {
 	font-weight: 900;
 	background-color: transparent;
 	padding: 12px 15px;
-	border: 1px solid #ffffff;
+	border: 1px solid rgb(97, 96, 96);
 	cursor: pointer;
 	outline: none;
-	color: white;
+	color: rgb(97, 96, 96);
 }
 
 .paginationWrapper button.active {
