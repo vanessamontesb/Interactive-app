@@ -1,4 +1,6 @@
+
 .grid-1 {
+    background: #f3f3f3;
     display: grid;
     width: 100%;
     max-width: 100%;
@@ -40,17 +42,28 @@
     
   }
   .item-3 {
-    background: #30997a;
     grid-area: sidebar;
   }
   
   .item-4 {
-    background: #da6f2b;
+    background: white;
     grid-area: header;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    border-top: 5px solid red;
   }
+  .item-4  h3{
+    color:red;
+  }
+
   .item-5 {
-    background: #3d8bb1;
+    background: white;
     grid-area: article;
+    padding-top: 60px;
+    border-top: 5px solid  #42b2fd;
+  }
+  .item-5  h3{
+    color: #42b2fd;
   }
   
 
@@ -66,3 +79,4 @@
     color: #c5564a;
     font-size: 10px;
   }
+

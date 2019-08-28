@@ -16,16 +16,16 @@ const PAGE_PARAM = 'page=';
 
 const HITS = [
 	{
-		value: 10,
-		label: 10
+		value: 2,
+		label: 2
 	},
 	{
-		value: 20,
-		label: 20
+		value: 3,
+		label: 3
 	},
 	{
-		value: 30,
-		label: 30
+		value: 5,
+		label: 5
 	}
 ];
 
@@ -36,7 +36,7 @@ class Profile extends Component {
     this.state = {
       searchQuery: '',
       result: {},
-      hitsPerPage: 20,
+      hitsPerPage: 5,
       page: 0
     }
   }
@@ -122,12 +122,9 @@ class Profile extends Component {
         <div class="item-1">
           <Input onKeyPress={this.getSearch} onChange={this.handleInputChange} value={searchQuery} /></div>
         <div class="item-2">
+		<div className="item2Container">
         <Select handleChange={this.handleHitsChange} options={HITS} value={hitsPerPage} />
-				<Pagination
-					onClick={this.handlePageChange}
-					page={page}
-					lastPage={nbPages}
-				/>
+
         <ul className="newsList">
 					{hits.map(({ author, created_at, num_comments, objectID, title, points, url }) =>
 						<NewsPost
@@ -140,13 +137,21 @@ class Profile extends Component {
 							url={url}
 						/>
 					)}
-				</ul>
+		</ul>
+		<Pagination
+			onClick={this.handlePageChange}
+			page={page}
+			lastPage={nbPages}
+		/>
+				</div>
         </div>
         <div class="item-3">
           <div class="item-4">
+			<h3><i class="fab fa-youtube"></i>Videos</h3>
             <ReactYouTubeExample/>
           </div>
           <div class="item-5">
+		  <h3> <i class="fab fa-twitter-square"></i>Twitts</h3>
             <Twitter/>
           </div>
         </div>
