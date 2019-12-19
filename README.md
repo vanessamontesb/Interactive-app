@@ -1,6 +1,6 @@
 #Aplicación con login que permite realizar visualizaciones de twitter, youtube, y news.
 
-Se utilizó mode.js(Express), mongodb, react.js y bootstrap para el login.
+Se utilizó node.js(Express), mongodb, react.js y bootstrap para el login.
 
 Se utilizó react-twitter-embed para la API  de twitter.
 
